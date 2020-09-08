@@ -1,0 +1,43 @@
+.option1{
+    background: green;
+    position:absolute;
+    height:100vh;
+    width: 100vw;
+}
+
+.home{
+    background:yellow;
+    position: absolute;
+}
+
+.fade-enter {
+    opacity: 0.01;
+    
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: all 1000ms ease-in;
+    
+    transition-delay: 400ms;
+  }
+  
+  .fade-leave {
+    opacity: 1;
+    
+  }
+  
+  .fade-leave.fade-leave-active {
+    opacity: 0.01;
+    transition: all 300ms ease-in;
+    
+  }
+
+/* .option1{
+    background: green;
+    --sal-duration:3s;
+    --sal-delay:2s;
+}
+@import '../../node_modules/sal.js/dist/sal.css'; */
+
+/* keyframes to animate pictures */

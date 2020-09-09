@@ -10,6 +10,22 @@
     position: absolute;
 }
 
+.move-picture{
+  position: relative;
+  width: 20%;
+  top:50vh;
+  left: 50vw;
+}
+
+.animate{
+  animation: move 1s infinite;
+}
+
+@keyframes move{
+  0% {top: 50%;}
+  100% {top:0%;}
+}
+
 .fade-enter {
     opacity: 0.01;
     
@@ -17,9 +33,8 @@
   
   .fade-enter.fade-enter-active {
     opacity: 1;
-    transition: all 1000ms ease-in;
-    
-    transition-delay: 400ms;
+    transition: all 1500ms ease;
+    transition-delay: 1000ms;
   }
   
   .fade-leave {
@@ -29,15 +44,10 @@
   
   .fade-leave.fade-leave-active {
     opacity: 0.01;
-    transition: all 300ms ease-in;
+    transition: all 1000ms ease;
+    transition-delay: 500ms;
     
   }
 
-/* .option1{
-    background: green;
-    --sal-duration:3s;
-    --sal-delay:2s;
-}
-@import '../../node_modules/sal.js/dist/sal.css'; */
 
 /* keyframes to animate pictures */

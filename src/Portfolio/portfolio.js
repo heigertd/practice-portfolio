@@ -4,22 +4,36 @@ import './portfolio.css';
 
 export default function Portfolio() {
     const [pageState, setPageState] = useState([]);
+    const [buttonClicked, setButtonClicked] = useState([]);
 
     useEffect(() => {
         setPageState('home');
     
     }, [])
 
-    // useEffect(() => {
-    //     sal({
-    //         threshold: .05,
-    //         once: false,
-    //         enterEventName: 'sal:in'
-    //     });
-    // }, [])
+    useEffect(() => {
+        setButtonClicked(' ');
     
-    function optionOne(click){
-        setPageState(click.target.value)
+    }, [pageState])
+
+
+    function firstThing(){
+        setButtonClicked('yes')
+        
+    }
+
+    const secondThing = async () => {
+        const result = await firstThing();
+        
+        setPageState('option1')
+       
+    }
+
+    const thirdThing = async () => {
+        const result = await firstThing();
+        
+        setPageState('home')
+       
     }
 
 
@@ -27,13 +41,16 @@ export default function Portfolio() {
         <div className='portfolio'>
             <ReactCSSTransitionGroup
                 transitionName='fade'
-                transitionEnterTimeout={1000}
-                transitionLeaveTimeout={300}
+                transitionEnterTimeout={1500}
+                transitionLeaveTimeout={1000}
             >
             {pageState == 'home' &&
             <div className='option1'>
                 <h1>home</h1>
-                <button value='option1' onClick={optionOne}>Option 1</button>
+                <button value='option1' onClick={secondThing}>Option 1</button>
+                <div className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}>
+                    <p id='one'>picture goes here</p>
+                </div>
             </div>    
             }
             
@@ -41,7 +58,10 @@ export default function Portfolio() {
             {pageState == 'option1' &&
             <div className='option1'>
                 <h1>option one</h1>
-                <button value='home' onClick={optionOne}>Home</button>
+                <button value='home' onClick={thirdThing}>Home</button>
+                <div className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}>
+                    <p id='one'>picture goes here</p>
+                </div>
             </div>    
             }
             </ReactCSSTransitionGroup>

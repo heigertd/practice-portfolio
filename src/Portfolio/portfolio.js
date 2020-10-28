@@ -8,12 +8,10 @@ export default function Portfolio() {
 
     useEffect(() => {
         setPageState('home');
-    
     }, [])
 
     useEffect(() => {
         setButtonClicked(' ');
-    
     }, [pageState])
 
 

@@ -1,0 +1,67 @@
+p, h1, h3{
+    color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    height: 100vh;
+    place-items: center;
+    /* background-color: purple; */
+}
+
+.con1{
+    /* background-color: blue; */
+    grid-column: 1;
+    grid-row: 1;
+    /* text-align: center; */
+}
+
+.con2{
+    /* background-color: blue; */
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.con3{
+    /* background-color: blue; */
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.con4{
+    /* background-color: blue; */
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.b1{
+    /* background-color: pink; */
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.b2{
+    /* background-color: pink; */
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.b3{
+    /* background-color: pink; */
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.b4{
+    /* background-color: pink; */
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.page{
+    /* background-color: orange; */
+    grid-column: 2;
+    grid-row: 2;
+
+}

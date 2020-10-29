@@ -1,13 +1,13 @@
-p, h1, h3{
+/* p, h1, h3{
     color: white;
-}
+} */
 
 .grid{
     display: grid;
     grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
     height: 100vh;
     place-items: center;
-    /* background-color: purple; */
+    background-color: white;
 }
 
 .con1{

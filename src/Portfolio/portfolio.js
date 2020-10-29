@@ -44,10 +44,17 @@ export default function Portfolio() {
             >
             {pageState == 'home' &&
             <div className='option1'>
-                <h1>home</h1>
-                <button value='option1' onClick={secondThing}>Option 1</button>
-                <div className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}>
-                    <p id='one'>picture goes here</p>
+                <div className='box1'>
+                </div>
+                <div className='box2'>
+                    <div>
+                        <h1>home</h1>
+                        <button id='next-page' value='option1' onClick={secondThing}>Option 1</button>
+                        <div id='one' className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}></div>
+                    </div>
+                </div>
+                <div className='box3'>
+                   
                 </div>
             </div>    
             }
@@ -58,7 +65,7 @@ export default function Portfolio() {
                 <h1>option one</h1>
                 <button value='home' onClick={thirdThing}>Home</button>
                 <div className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}>
-                    <p id='one'>picture goes here</p>
+                    <p id='one'></p>
                 </div>
             </div>    
             }

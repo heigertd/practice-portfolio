@@ -14,7 +14,7 @@ export default function Portfolio() {
     const [buttonClicked, setButtonClicked] = useState([]);
 
     useEffect(() => {
-        setPageState('Portfolio');
+        setPageState('Home');
     }, [])
 
     useEffect(() => {
@@ -91,7 +91,7 @@ export default function Portfolio() {
                     <div className='box2'>
                         <div>
                             <h1>{home[2].page}</h1>
-                            <button id='next-page' value={home[2].page} onClick={secondThing}>Option 1</button>
+                            <button id='next-page' value={home[2].nextPage} onClick={secondThing}>{home[2].nextPage}</button>
                             <div id='one' className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}></div>
                         </div>
                     </div>

@@ -54,7 +54,7 @@ export const home = [
                 description: 'social distance app',
                 tech: 'HTML CSS JavaScript'
             }],
-        nextPage: 'About',
+        nextPage: 'Home',
     },
 
 ]

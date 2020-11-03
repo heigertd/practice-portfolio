@@ -13,6 +13,10 @@ img{
   justify-content: center;
 }
 
+#experience{
+  display: flex;
+}
+
 .option1{
   display: flex;
   flex-wrap: wrap;
@@ -25,6 +29,7 @@ img{
 
 .box1, .box3{
   background-color: pink;
+  flex-direction: column;
 }
 
 .box1, .box2, .box3{
@@ -33,6 +38,10 @@ img{
  margin: 5px;
  justify-content: center;
 }
+
+/* .box3{
+  flex-direction: column;
+} */
 
 .home{
     background:yellow;

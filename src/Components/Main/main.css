@@ -6,15 +6,7 @@ h3{
     text-shadow: 0 0 0 transparent, 0 0 10px #03d7fd, 0 0 20px rgba(94, 170, 247, 0.5), 0 0 40px #26ccff, 0 0 50px #3ebdf8, 0 0 60px #f5f4f4, 0 0 70px #f5f4f4, 0 0 80px #f5f4f4, 0 0 100px #fcf9f9, 0 0 200px #eeeced, 0 0 300px #faf9f9, 0 0 500px #f8f6f6, 0 0 1000px #fcfafb; 
 }
 
-h2{
-  color: white;
-}
-
-p{
-  color: white;
-}
-
-h1{
+.main-h1{
   font-family: 'Source Code Pro', monospace;
   color: rgb(70, 196, 255);
   text-shadow: 0 0 0 transparent, 0 0 10px #03d7fd, 0 0 20px rgba(94, 170, 247, 0.5), 0 0 40px #26ccff, 0 0 50px #3ebdf8, 0 0 60px #f5f4f4, 0 0 70px #f5f4f4, 0 0 80px #f5f4f4, 0 0 100px #fcf9f9, 0 0 200px #eeeced, 0 0 300px #faf9f9, 0 0 500px #f8f6f6, 0 0 1000px #fcfafb;
@@ -53,8 +45,7 @@ h1{
 
 .box3{
     background-image: linear-gradient(to right, black, rgb(4, 58, 80));
-    flex-direction: column;
-    text-align: center;
+  flex-direction: column;
 }
 
 .box1, .box2, .box3{
@@ -70,14 +61,25 @@ h1{
     text-align: center;
 }
 
-.experience{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
 
 
 @keyframes blink {
+  
+  0% {
+    opacity: 1;
+  }
+  2% {
+    opacity: 0.8;
+  }
+  3% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  6% {
+    opacity: 1;
+  }
   40% {
     opacity: 1;
   }
@@ -95,29 +97,3 @@ h1{
   }
 }
 
-
-.fade-enter {
-    opacity: 0.01;
-    
-  }
-  
-  .fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: all 1500ms ease;
-    transition-delay: 1000ms;
-  }
-  
-  .fade-leave {
-    opacity: 1;
-    
-  }
-  
-  .fade-leave.fade-leave-active {
-    opacity: 0.01;
-    transition: all 1000ms ease;
-    transition-delay: 500ms;
-    
-  }
-
-
-/* keyframes to animate pictures */

@@ -15,15 +15,15 @@ export const home = [
         page: 'About',
         con1: 'So who is this guy? I am a Seattle-based web developer. I started web development after a friend of mine showed me a web site he had built by himself. The process intrigued me and I started teaching myself some basic coding with some help from some friends. Eventually I decided I needed some more structured training and eventually recieved my full-stack certification through the University of Washington.',
         xp: [{
-                image: "https://img.icons8.com/material-outlined/60/000000/html-5.png",
+                image: "https://img.icons8.com/material-outlined/60/ffffff/html-5.png",
                 title: 'HTML'
             },
             {
-                image: "https://img.icons8.com/ios-glyphs/60/000000/css3.png",
+                image: "https://img.icons8.com/ios-glyphs/60/ffffff/css3.png",
                 title: 'CSS'
             }, 
             {
-                image: "https://img.icons8.com/ios-filled/60/000000/javascript.png",
+                image: "https://img.icons8.com/ios-filled/60/ffffff/javascript.png",
                 title: 'JavaScript'
             }
         ],

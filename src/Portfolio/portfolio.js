@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import Main from '../Components/Main/Main'
 import Experience from '../Components/Experience/Experience';
 import Project from '../Components/Project/Project';
 import Mody from '../images/Mody.png'
@@ -22,18 +23,11 @@ export default function Portfolio() {
     }, [pageState])
 
 
-    function firstThing(){
+    function firstThing(e){
         setButtonClicked('yes')
-        
-    }
-
-    const secondThing = async (e) => {
         e.persist();
-        const result = await firstThing();
         setPageState(e.target.value)
-       
     }
-
 
     return(
         <div className='portfolio'>
@@ -48,14 +42,14 @@ export default function Portfolio() {
                     </div>
                     <div className='box2'>
                         <div>
-                            <h1>{home[0].page}</h1>
-                            <button id='next-page' value={home[1].page} onClick={secondThing}>Option 1</button>
-                            <div id='one' className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}></div>
-                        </div>
+                            <h1 className='main-h1'>{home[0].page}</h1>
+                            <h3>Seattle-based Web Developer</h3>
+                        </div>  
+                        <button className='next-page' value={home[1].page} onClick={firstThing}>About</button>  
                     </div>
                     <div className='box3'> 
                     </div>
-                </div>    
+                </div> 
             }
             
             
@@ -67,13 +61,12 @@ export default function Portfolio() {
                     <div className='box2'>
                         <div>
                             <h1>{home[1].page}</h1>
-                            <button id='next-page' value={home[1].nextPage} onClick={secondThing}>Option 1</button>
-                            <div id='one' className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}></div>
                         </div>
+                            <button className='next-page' value={home[1].nextPage} onClick={firstThing}>Portfolio</button>
                     </div>
                     <div className='box3'>
                     <h2>Experience</h2>
-                    <div id='experience'>
+                    <div className = 'experience'>
                         {home[1].xp.map(element => { 
                             return <Experience image = {element.image} title = {element.title} />
                         })}
@@ -91,9 +84,8 @@ export default function Portfolio() {
                     <div className='box2'>
                         <div>
                             <h1>{home[2].page}</h1>
-                            <button id='next-page' value={home[2].nextPage} onClick={secondThing}>{home[2].nextPage}</button>
-                            <div id='one' className={`move-picture ${buttonClicked=='yes' ? 'animate' : ''}`}></div>
                         </div>
+                            <button className='next-page' value={home[2].nextPage} onClick={firstThing}>{home[2].nextPage}</button>
                     </div>
                     <div className='box3'>
                     <Project img = {Mody} description = {home[2].box3[0].description} tech = {home[2].box3[0].tech} />
